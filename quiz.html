@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+  </head>
+  <body>
+    <div id="appear" style="display: none">
+    <b>Click on 'Take Quiz' to change its colour</b>
+  </div>
+  <button onclick="show_hide()">Click me!</button>
+    
+    <form name="Quiz" class="questions">
+      <p id=quiztitle> <a onclick='change_heading()'>Take Quiz</p><br>
+      Full name: <input type="text" name="fullname" size= "50"> 
+      <button type="button" onclick="validateText()">Submit</button>
+      
+      <br><br><br>
+      <p>Global Warming also refers to as:</p>
+        <input type="radio" name="answerq1" value="Answer1"> Climate 
+        change <br>
+        <input type="radio" name="answerq1" value="Answer2"> Ecological
+        change <br>
+        <input type="radio" name="answerq1" value="Answer3"> Atmosphere
+        change <br>
+        <input type="radio" name="answerq1" value="Answer4"> None of
+        above <br>
+        <button type="button" onclick="validateRadio()">Submit</button>
+
+      <br><br><br>
+      <p>How many countries have signed the Paris Agreement?</p>
+        <input type="number" name="parisagreement" min="0" max="1000" 
+        step="1" id="numb">
+        <button type="button" onclick="validateNumber()">Submit</button>
+
+        <br><br><br>
+        
+      <button type="button" onclick="validateQuestions()">Submit all</button>
+      
+      <br><br>
+      
+    
+      <button type="button" onclick="checkAnswers()">Check Answers</button>
+      <br><br>
+      
+      <button onclick="finishFunction()">Finish</button>
+      <br>
+      
+        <br><br><br><br>
+        
+      <a href="index.html" target="_blank">Home Page</a>
+    </form>
+ 
+   <script src="script.js"></script> 
+  </body>
+</html>
